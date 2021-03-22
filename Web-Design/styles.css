@@ -1,0 +1,327 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #191919;
+}
+
+main {
+    position: relative;
+    background-color: #191919;
+    padding-bottom: 500px;
+}
+
+#active {
+    color: white !important;
+    font-weight: bold;
+}
+  /* ------------------------------------------------- sites -------------------------------------------------------*/
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-basis: 1;
+  width: 100vw;
+  justify-content: center;
+  margin-top: 30vh;
+}
+
+.img {
+  width: 30vw;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.overlay {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+.web {
+  position: relative;
+}
+.web:hover .img {
+  opacity: 0;
+}
+.web:hover .overlay {
+  opacity: 1;
+}
+.over-img {
+  width: 30vw;
+  margin-bottom: 20px;
+}
+
+  /* ------------------------------------------------- buttons -------------------------------------------------------*/
+
+  .button {
+    display: inline-block;
+    width: 225px;
+    height: 55px;
+    margin-left: 26%;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    color: #168BF2;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:focus {
+    transform: scale(1.1);
+  }
+  .button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #191919;
+    border: 3px solid #168BF2;
+    border-radius: 5px;
+    z-index: -2;
+  }
+  .button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #FF19D3;
+    transition: all 0.3s;
+    border-radius: 5px;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+    cursor: pointer;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+i {
+    margin-left: 25px;
+    margin-bottom: 3px;
+}
+
+  /* ------------------------------------------------- HEADER/NAV -------------------------------------------------------*/
+
+  #logo {
+    width: 50px;
+    margin: 0;
+}
+
+.nav-link {
+    color: #9f9f9f !important;
+    font-size: 1em;
+    padding: 0 !important;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    transition: 0.3s ease;
+}
+#menu {
+    width: 35px;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    line-height: 2.5em;
+    background-color: #212121;
+    width: 100vw;
+    margin: 0;
+}
+header {
+    background-color: #212121;
+    height: 70px;
+    box-shadow: 0 4px 5px -5px black;
+}
+.nav-link:hover {
+    color: white !important;
+}
+.navbar-toggler {
+    box-shadow: none;
+    margin-top: none;
+}
+.navbar-toggler:hover {
+    color: white;
+}
+
+/* ------------------------------------------------- FOOTER -------------------------------------------------------*/
+
+.media-link {
+    width: 50px;
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.footer-distributed {
+    background-color: #212121;
+    box-shadow: 0 1px 1px 0 black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 250px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    transition:all .25s;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .last-link {
+      margin-left: 3px;
+  }
+  .heart {
+      color: #c93030;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+        width: 120vw;
+    }
+    #logo {
+        margin-right: 20vw;
+    }
+    .navbar-collapse {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        line-height: 3.5em;
+        font-size: 1.2em;
+        margin-left: -30px;
+        padding-left: 40px;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 1;
+      width: 100vw;
+      margin-left: 0vw;
+      justify-content: center;
+      margin-top: 12vh;
+      padding-bottom: 350px;
+    }
+    .img {
+      width: 100%;
+      display: block;
+    }
+    .over-img {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .button {
+      margin-left: 10vw;
+      margin-top: 0px;
+      margin-bottom: 30px;
+      width: 70vw;
+      height: 50px;
+    }
+  
+}
+@media (max-width: 1400px) and (min-width: 800px){
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+    width: 70vw;
+    margin-left: 15vw;
+    justify-content: center;
+    margin-top: 5vh;
+    padding-bottom: 250px;
+  }
+  .img {
+    width: 100%;
+    display: block;
+  }
+  .over-img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .button {
+    margin-left: 33%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    width: 250px;
+    height: 65px;
+  }
+}

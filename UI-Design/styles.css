@@ -1,0 +1,260 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #191919;
+}
+
+main {
+    padding-top: 75px;
+    padding-bottom: 155px;
+    background-color: #191919;
+}
+
+#bootstrap-overrides #active {
+    color: white !important;
+    font-weight: bold;
+}
+#bootstrap-overrides header {
+  margin-top: 0;
+  border-bottom: none;
+}
+#bootstrap-overrides #nav-content {
+  margin-left: 32%;
+  margin-top: 5px;
+}
+
+  /* ------------------------------------------------- Carousels -------------------------------------------------------*/
+
+#myCarousel1, #myCarousel2, #myCarousel3, #myCarousel4, #myCarousel5, #myCarousel6 {
+  width: 100%;
+  padding: 3px;
+}
+.gallery-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  grid-gap: 2px;
+  justify-items: center;
+  margin: 0;
+  padding: 0;
+}
+  /* ------------------------------------------------- HEADER/NAV -------------------------------------------------------*/
+
+  #bootstrap-overrides #logo {
+    width: 50px;
+    margin-left: -15px;
+    margin-top: -8px;
+}
+#bootstrap-overrides .navbar-brand {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#bootstrap-overrides nav {
+  border: none;
+}
+
+#bootstrap-overrides .nav-link {
+    color: #9f9f9f !important;
+    font-size: 1.15em;
+    padding: 0 !important;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
+    transition: 0.3s ease;
+}
+#bootstrap-overrides #menu {
+    width: 35px;
+}
+
+#bootstrap-overrides #nav-content {
+    line-height: 2.5em;
+    background-color: #212121;
+    width: 100vw;
+    border-bottom: none;
+}
+#bootstrap-overrides header {
+    background-color: #212121;
+    height: 70px;
+    box-shadow: 0 4px 5px -5px black;
+}
+#bootstrap-overrides .nav-link:hover {
+    color: white !important;
+}
+#bootstrap-overrides .navbar-toggler {
+    box-shadow: none;
+    margin-top: none;
+    position: relative;
+    margin: 0 auto;
+    margin-left: 8px;
+}
+#bootstrap-overrides .navbar-toggler:hover {
+    color: white;
+}
+
+/* ------------------------------------------------- FOOTER -------------------------------------------------------*/
+
+.media-link {
+    width: 50px;
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.footer-distributed {
+    background-color: #212121;
+    box-shadow: 0 1px 1px 0 black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 250px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    transition:all .25s;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .last-link {
+      margin-left: 3px;
+  }
+  .heart {
+      color: #c93030;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #bootstrap-overrides header {
+        width: 120vw;
+        border: none;
+    }
+    #bootstrap-overrides .navbar-toggler {
+      margin-top: 10px;
+
+    }
+    #bootstrap-overrides #logo {
+      margin-right: 19vw;
+      margin-top: -8px;
+  }
+  #bootstrap-overrides #nav-content {
+    margin-left: -50px;
+    margin-top: 10px;
+    border-top: none !important;
+  }
+  #bootstrap-overrides .nav-link {
+    margin-left: 40px;
+    margin-bottom: 22px;
+    margin-top: 22px;
+    font-size: 1.1em;
+  }
+  #bootstrap-overrides .navbar-collapse {
+      padding-bottom: 30px;
+      padding-top: 10px;
+      line-height: 3.5em;
+      font-size: 1.2em;
+      margin-left: -30px;
+      padding-left: 40px;
+      border: none;
+  }
+  
+    .gallery-grid {
+      display: -ms-grid;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
+      grid-gap: 2px;
+      justify-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      padding-bottom: 265px;
+    }
+  
+  
+}
+@media (max-width: 1400px) and (min-width: 769px){
+  #bootstrap-overrides #nav-content {
+      margin-left: 20%;
+  }
+  .gallery-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(45vw, 1fr));
+    grid-gap: 2px;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+}
