@@ -8,6 +8,14 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+
+        <script>
+            function onSubmit(token) {
+              document.getElementById("demo-form").submit();
+            }
+        </script>
+
     </head>
 
 
@@ -92,7 +100,7 @@
                             <label for="message">Message (optional)</label>
                             <textarea id="message" name="message" placeholder="Describe your reason for contact" style="height:200px"></textarea>
 
-                            <button class="button" type="submit" value="Submit">SUBMIT</button>
+                            <button type="submit" value="Submit" class="button g-recaptcha" data-sitekey="6LfYl-gaAAAAACfdv2tMDyqpIXI6o03QcTBe3OoF" data-callback="onSubmit" data-action="submit">SUBMIT</button>
 
                         </form>
                     </div>

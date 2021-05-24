@@ -85,9 +85,6 @@ input, select, textarea {
   ::placeholder {
       color: #606060;
   }
-  input:focus, select:focus, textarea:focus {
-    outline: 1px solid #8900FF;
-  }
 
 
   .button {
