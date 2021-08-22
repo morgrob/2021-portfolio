@@ -1,0 +1,202 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #191919;
+    color: white;
+}
+.container-fluid-max {
+    max-width: 100%;
+  }
+
+#active {
+    color: white !important;
+    font-weight: bold;
+}
+#section {
+    color: white;
+    padding-top: 110px;
+    padding-bottom: 735px;
+    margin: 0 auto;
+    width: 50%;
+}
+#section h1 {
+    font-weight: bold;
+    font-size: 2.1em;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.link {
+    text-decoration: none;
+    color: #168BF2;
+}
+.link:hover {
+    color: #FF19D3;
+    text-decoration: none;
+}
+.date {
+    color: #c3c3c3;
+}
+
+/* ------------------------------------------------- HEADER/NAV -------------------------------------------------------*/
+
+#logo {
+    width: 50px;
+    margin: 0;
+}
+
+.nav-link {
+    color: #9f9f9f !important;
+    font-size: 1em;
+    padding: 0 !important;
+    margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 2px;
+    transition: 0.3s ease;
+}
+#menu {
+    width: 35px;
+}
+
+.navbar-collapse {
+    justify-content: center;
+    line-height: 2.5em;
+    background-color: #212121;
+    width: 100vw;
+    margin: 0;
+}
+header {
+    background-color: #212121;
+    height: 72px;
+    box-shadow: 0 4px 5px -5px black;
+}
+.nav-link:hover {
+    color: white !important;
+}
+.navbar-toggler {
+    box-shadow: none;
+    margin-top: none;
+}
+.navbar-toggler:hover {
+    color: white;
+}
+
+/* ------------------------------------------------- FOOTER -------------------------------------------------------*/
+
+.media-link {
+    width: 50px;
+}
+footer {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.footer-distributed {
+    background-color: #212121;
+    box-shadow: 0 1px 1px 0 black;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 250px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: #212121;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    transition:all .25s;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+  .last-link {
+      margin-left: 3px;
+  }
+  .heart {
+      color: #c93030;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    header {
+        height: 70px;
+        width: 120vw;
+    }
+    #logo {
+        margin-right: 20vw;
+    }
+    .navbar-collapse {
+        padding-bottom: 30px;
+        padding-top: 30px;
+        line-height: 3.5em;
+        font-size: 1.2em;
+        margin-left: -30px;
+        padding-left: 40px;
+    }
