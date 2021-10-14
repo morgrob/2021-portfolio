@@ -10,6 +10,11 @@ main {
     padding-bottom: 155px;
     background-color: #191919;
 }
+#ui-des {
+  display: flex;
+  justify-content: space-around;
+  color: #e2e2e2;
+}
 
 #bootstrap-overrides #active {
     color: white !important;
@@ -41,6 +46,9 @@ main {
 }
   /* ------------------------------------------------- HEADER/NAV -------------------------------------------------------*/
 
+  .about {
+    margin-left: -70px;
+  }
   #bootstrap-overrides #logo {
     width: 50px;
     margin-left: -15px;

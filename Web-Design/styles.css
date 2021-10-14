@@ -26,7 +26,7 @@ main {
   column-gap: 5vw;
   row-gap: 3vh;
   grid-template-columns: 15vw 15vw 15vw 15vw;
-  grid-template-rows: 200px 200px 200px 200px;
+  grid-template-rows: 190px 190px 190px 190px;
 }
 .container0 {
   grid-column: 1 / 3;
@@ -47,25 +47,26 @@ main {
 .img {
   display: block;
   width: 100%;
-  transition: 0.3s ease-in-out;
-  border-radius: 5px;
+  /* transition: 0.3s ease-in-out; */
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
 }
-.overlay {
+/* .overlay {
   opacity: 0;
   position: absolute;
   top: 0;
   color: white;
   transition: 0.5s ease-in-out;
-}
+} */
 .web {
   position: relative;
 }
-.web:hover .img {
+/* .web:hover .img {
   opacity: .1;
 }
 .web:hover .overlay {
   opacity: 1;
-}
+} */
 .overlay p {
   width: 80%;
   margin: 20% 10%;
@@ -76,11 +77,9 @@ main {
 
   .button {
     display: inline-block;
-    width: 225px;
-    height: 55px;
-    margin-left: 30%;
-    margin-top: 15px;
-    border-radius: 5px;
+    padding: 10px 25px;
+    margin-bottom: 15px;
+    border-radius: 100px;
     border: none;
     color: #168BF2;
     font-size: 1.1rem;
@@ -103,7 +102,7 @@ main {
     height: 100%;
     background-color: #191919;
     border: 3px solid #168BF2;
-    border-radius: 5px;
+    border-radius: 100px;
     z-index: -2;
   }
   .button:before {
@@ -171,6 +170,16 @@ header {
 }
 .navbar-toggler:hover {
     color: white;
+}
+.web-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+}
+.web-title h2 {
+  font-size: 1.55em;
+  margin-top: 6px;
 }
 
 /* ------------------------------------------------- FOOTER -------------------------------------------------------*/
@@ -274,6 +283,9 @@ footer {
     .footer-distributed .footer-left p.footer-links {
       line-height: 1.8;
     }
+    #main-section {
+      width: 90vw;
+    }
   }
   
   @media (max-width: 768px) {
@@ -298,7 +310,7 @@ footer {
       margin-top: 90px;
       padding-bottom: 300px;
       grid-template-columns: 90vw;
-      grid-template-rows: 275px 275px 275px 275px;
+      grid-template-rows: 400px 400px 400px 400px;
     }
     .container0 {
       grid-column: 1 / 2;
@@ -321,6 +333,23 @@ footer {
     }
     .overlay p {
       font-size: 0.75em;
+    }
+    #main-section {
+      width: 90vw !important;
+    }
+    #hurricane-imgs, #mimicry-imgs {
+      display: flex;
+      flex-direction: column !important;
+      justify-content: center !important;
+    }
+    #hurricane-imgs img, #mimicry-imgs img {
+      width: 100% !important;
+    }
+    #btns {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 40px;
     }
   
 }
@@ -353,4 +382,52 @@ footer {
   .button {
     margin-left: 30%;
   }
+}
+
+#main-section {
+  color: white;
+  width: 60vw;
+  margin: 100px auto 0px auto;
+  padding-bottom: 250px;
+}
+#main-section h1 {
+  font-size: 25pt;
+  font-weight: bold;
+  text-align: center;
+  margin: 15px 0;
+}
+#main-section h4 {
+  font-style: italic;
+  margin: 20px 0;
+}
+#main-section p {
+  margin: 20px 0;
+}
+#hurricane-imgs, #mimicry-imgs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#btns {
+  display: flex;
+  justify-content: center;
+  margin: 40px;
+}
+#btns .button {
+  margin: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#btns .button:hover {
+  text-decoration: none;
+}
+#btns .button i {
+  margin-right: 15px;
+}
+#main-section p a {
+  color: #168BF2;
+}
+#main-section p a:hover {
+  color: #FF19D3;
+  text-decoration: none;
 }
