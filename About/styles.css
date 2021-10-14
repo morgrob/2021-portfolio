@@ -146,7 +146,7 @@ h4 {
   .button:hover:before {
     width: 100%;
   }
-i {
+.button i {
     margin-right: 25px;
     margin-bottom: 3px;
 }
